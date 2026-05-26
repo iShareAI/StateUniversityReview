@@ -1,0 +1,351 @@
+﻿/* ======================================================
+   FOOTER (iShare) — Typography Strip Lab roles
+====================================================== */
+
+.site-footer{
+  background-color: rgba(236, 173, 44);
+  color: rgba(255,255,255,.86);
+  margin-top: 120px;
+}
+
+/* Main grid */
+.footer-inner{
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 70px;
+  padding: 90px 0 70px;
+}
+
+/* Left contact column */
+.footer-title{
+  margin-bottom: 22px;
+  color: rgba(255,255,255,.92);
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size);
+  font-weight: var(--ui-font-weight);
+  letter-spacing: var(--ui-letter-spacing);
+  text-transform: var(--ui-text-transform);
+}
+
+.footer-block{
+  padding: 22px 0;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.footer-block:first-of-type{
+  border-top: none;
+  padding-top: 0;
+}
+
+.footer-subtitle{
+  margin-bottom: 10px;
+  color: rgba(255,255,255,.90);
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size);
+  font-weight: var(--ui-font-weight);
+  letter-spacing: var(--ui-letter-spacing);
+  text-transform: var(--ui-text-transform);
+}
+
+.footer-text{
+  margin: 0 0 8px;
+  color: rgba(255,255,255,.70);
+  font-family: var(--ff-body);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+/* Phone links - styled as text */
+.footer-phone{
+  color: rgba(255,255,255,.70);
+  text-decoration: none;
+}
+
+.footer-phone:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* email link (no underline by default) */
+.footer-link{
+  display: inline-block;
+  margin-top: 6px;
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size);
+  font-weight: var(--ui-font-weight);
+  letter-spacing: var(--ui-letter-spacing);
+  text-transform: var(--ui-text-transform);
+  color: rgba(255,255,255,.82);
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Right side */
+.footer-quote{
+  max-width: 50ch;
+  color: rgba(255,255,255,.72);
+  margin-bottom: 22px;
+  font-family: var(--ff-body);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+/* CTA as typographic link (not button) */
+.footer-cta{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size);
+  font-weight: var(--ui-font-weight);
+  letter-spacing: var(--ui-letter-spacing);
+  text-transform: var(--ui-text-transform);
+
+  color: rgba(255,255,255,.92);
+  text-decoration: none;
+
+  padding: 12px 0;
+}
+
+.footer-cta:hover{
+  text-decoration: underline;
+}
+
+/* Find us on */
+.footer-find{
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.footer-social{
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-social-link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--ff-body);
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+  margin-bottom: 6px;
+}
+
+.footer-social-icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+
+.footer-social-link:hover{
+  opacity: 0.8;
+}
+
+/* Back to top */
+.footer-top{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin-top: 26px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-top svg{
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.footer-top:hover{
+  opacity: 0.8;
+}
+
+/* Bottom area */
+.footer-bottom{
+  border-top: 1px solid rgba(255,255,255,.10);
+  padding: 20px 0;
+}
+
+.footer-bottom-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.footer-mini-nav,
+.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-mini-nav a,
+.footer-links a{
+  color: rgba(255,255,255,.60);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.footer-mini-nav a:hover,
+.footer-links a:hover{
+  color:#fff;
+  text-decoration: underline;
+}
+
+.footer-copyright{
+  color: rgba(255,255,255,.55);
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .footer-inner{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 70px 0 50px;
+  }
+
+  .footer-bottom-inner{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===============================
+   Footer Header Clone (reversed)
+================================ */
+
+.footer-header-clone {
+  margin-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+
+.utility-bar--footer,
+.topbar--footer {
+  background: #0b0f14;
+}
+
+/* Adjust spacing in footer */
+.utility-bar--footer {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Main "inversion": item order */
+.topbar-inner--footer {
+  flex-direction: row-reverse; /* change order automatically */
+}
+
+/* Footer links */
+.nav-desktop--footer a,
+.utility-bar--footer .utility-link {
+  color: rgba(255,255,255,0.82);
+}
+
+.nav-desktop--footer a:hover,
+.utility-bar--footer .utility-link:hover {
+  color: #ffffff;
+}
+
+/* CTA in footer "reversed" */
+.topbar-actions--footer .topbar-cta {
+  background: #ffffff;
+  color: #0b0f14;
+}
+
+.topbar-actions--footer .topbar-cta:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+/* Footer Book a Demo button uses .btn.btn-primary in shared-footer.js */
+.topbar-actions--footer .btn.btn-primary {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0b0f14;
+}
+
+.topbar-actions--footer .btn.btn-primary:hover {
+  background: rgba(255,255,255,0.9);
+  border-color: rgba(255,255,255,0.9);
+}
+
+/* If logo is dark — invert (you can remove if not needed) */
+.brand--footer .brand-logo {
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+}
+
+/* Dropdown menu in footer is better to open UP */
+.topbar--footer .nav-menu {
+  top: auto !important;
+  bottom: 100% !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: #ffffff !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 10px !important;
+}
+
+
+/* FIX: make footer clone light */
+.utility-bar--footer {
+  background: #ffffff !important;
+}
+
+.topbar--footer {
+  background: transparent !important; /* or #fff */
+}
+
+/* links like header */
+.utility-bar--footer .utility-link {
+  color: #000000 !important;
+  opacity: 1;
+}
+
+.nav-desktop--footer a {
+  color: inherit !important;
+  opacity: 1;
+}
+
+/* Footer dropdown menu items — make them visible */
+.topbar--footer .nav-menu a {
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+/* Footer copyright line */
+.footer-copyright-line {
+  background: #ffffff;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.footer-copyright-line .typo-util {
+  color: #000000;
+  font-size: .75rem;
+}
